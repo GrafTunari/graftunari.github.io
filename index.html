@@ -1,1 +1,26 @@
-"Hi" 
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/services-cards.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="dependecies/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#services-cards").load('templates/services-cards.html');
+            $("#about-us").load('templates/services-cards.html');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="parallax"></div>
+
+    <div id="services-cards"></div>
+
+    <div class="parallax"></div>
+
+    <div id="about-us"></div>
+</body>
+
+</html>
