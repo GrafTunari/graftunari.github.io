@@ -1,23 +1,36 @@
+<script>
+
+    $(".card").hover(function (e) {
+        console.log('he')
+        $(this).addClass('animated bounce');
+    }, function (e) {
+        $(this).removeClass('animated bounce');
+    });
+</script>
 <div class="container">
-    <div class="card">
-        <img src="../images/cover.jpg" alt="Avatar" style="width:100%">
-        <div class="card-container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+    <div style="flex:1">
+        <h1>Nuestros Productos</h1>
+        <p>
+            Entre nuestros principales productos y servicios presentamos nuestros
+            mostrarios de invitaciones para distintas festividades religiosas:
+        </p>
+    </div>
+
+    <div style="flex:2; display:flex; justify-content: space-around">
+        <div class="card ">
+            <img src="../images/mementos.jpg" alt="Avatar" style="width:100%">
+            <div class="card-container">
+                <h4><b>Mostrario de Mementos</b></h4>
+                <p>Invitaciones para funerales, entierros, 9 dias y mas...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../images/santos.svg" alt="Avatar" style="width:100%">
+            <div class="card-container">
+                <h4><b>Mostrario de Santos</b></h4>
+                <p>Festividades Religiosas, San Benito, San Jose, Santiago ...</p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="../images/cover.jpg" alt="Avatar" style="width:100%">
-        <div class="card-container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="../images/cover.jpg" alt="Avatar" style="width:100%">
-        <div class="card-container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
-        </div>
-    </div>
+
 </div>

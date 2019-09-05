@@ -1,26 +1,55 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/about-us.css">
     <link rel="stylesheet" type="text/css" href="css/services-cards.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-us.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 
     <script src="dependecies/jquery.min.js"></script>
     <script>
         $(function () {
+            $("#about-us").load('templates/about-us.html');
             $("#services-cards").load('templates/services-cards.html');
-            $("#about-us").load('templates/services-cards.html');
+            $("#contact-us").load('templates/contact-us.html');
         });
     </script>
 </head>
 
 <body>
-    <div class="parallax"></div>
+    <div class="parallax parallax1">
+        <h1 class="title parallax-text">Grafica Tunari</h1>
+        <p class="sub-title parallax-text">Sueña... Diseña... Imprime!</p>
+        <button class="main-button" style="vertical-align:middle"><span>Mostrario </span></button>
+    </div>
 
-    <div id="services-cards"></div>
+    <div class="section">
+        <div id="about-us"></div>
 
-    <div class="parallax"></div>
+        <div id="services-cards"></div>
+    </div>
 
-    <div id="about-us"></div>
+    <div class="parallax parallax2">
+        <div class="mision-container">
+            <h1>Mision</h1>
+            <p>Somos una imprenta experimentada dentro de las artes gráficas dedicada al diseño producción
+             y venta de invitaciones para todo acontecimiento social.  Nos destacamos por tener los mejores precios 
+             y diversidad de diseños; ajustándonos a los requerimientos de micro imprentas gráficas en la región de Cochabamba 
+             preservando el medio ambiente y ofreciendo a los empleados un ambiente laboral seguro.</p>
+        </div>
+        <div class="mision-container">
+            <h1>Vision</h1>
+            <p>Ser una imprenta referente dentro de las artes gráficas dedicada al diseño, producción y 
+             venta de invitaciones, orientada a la satisfacción plena de micro y pequeñas imprentas graficas
+             brindando los mejores precios a nivel nacional, promoviendo asi el desarrollo de aptitudes y conocimientos ede los empleados, sin dejar de lado 
+             la preservación del medio ambiente, seguridad en los ambientes de trabajo y seguridad en los trabajadores.</p>
+        </div>
+    </div>
+    
+    <div id="contact-us"></div>
 </body>
 
 </html>

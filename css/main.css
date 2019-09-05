@@ -1,17 +1,122 @@
 body {
     margin: 0px;
+    font-family: 'Chilanka', cursive;
+    background-color: #f0f1f3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("../images/cover.jpg");
-  
-    /* Set a specific height */
-    height: 500px;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
+
+.parallax1 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/cover.jpg");
+}
+
+.parallax2 {
+    height: 400px;
+    display: flex;    
+    justify-content: space-around;
+    background-image: url("../images/cover.jpg");
+}
+
+.parallax1::before {
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    height: 800px;
+    width: 100%;
+    position: absolute;
+}
+
+.parallax2::before {
+  content: "";
+  background-color: rgba(0,0,0,0.5);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+
+}
+
+
+.title {
+    font-size: 80px;
+    margin: 0px;
+}
+
+.sub-title {
+    font-size: 25px;
+    margin-bottom: 120px;
+}
+
+.parallax-text {        
+    color: #d6d6d6;
+    z-index: 20;
+}
+
+.main-button {
+    display: inline-block;
+    border-radius: 16px;
+    background-color: #258aaf;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 20;
+  }
+  
+  .main-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .main-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .main-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .main-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.section {
+  width: 80%;
+}
+
+.mision-container {
+  max-width: 40%;
+  color: white;
+  z-index: 20;
+  border: 2px solid;
+    padding: 20px;
+    border-radius: 10px;
+}

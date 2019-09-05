@@ -1,0 +1,20 @@
+.about-us-container {
+    display:flex;
+    padding: 80px 0px;
+    justify-content: space-between;
+}
+
+.about-us-container img {    
+    max-width: 100%;
+} 
+
+.about-us-text {
+    padding: 0px 0px 0px 100px;
+    flex:2;
+}
+
+@media only screen and (max-width: 575px) {
+    .about-us-container {
+      display: none;
+    }
+}
