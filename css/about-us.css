@@ -12,9 +12,3 @@
     padding: 0px 0px 0px 100px;
     flex:2;
 }
-
-@media only screen and (max-width: 575px) {
-    .about-us-container {
-      display: none;
-    }
-}

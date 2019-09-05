@@ -29,9 +29,10 @@ body {
 
 .parallax2 {
     height: 400px;
-    display: flex;    
-    justify-content: space-around;
+    width: 100%; 
+    /*justify-content: space-around; */
     background-image: url("../images/cover.jpg");
+    margin: 0px;
 }
 
 .parallax1::before {
@@ -55,6 +56,7 @@ body {
 .title {
     font-size: 80px;
     margin: 0px;
+    text-align: center;
 }
 
 .sub-title {
@@ -113,10 +115,10 @@ body {
 }
 
 .mision-container {
-  max-width: 40%;
+  margin: 0px 30px;
   color: white;
   z-index: 20;
   border: 2px solid;
-    padding: 20px;
+    padding: 20px 20px 10px;
     border-radius: 10px;
 }
